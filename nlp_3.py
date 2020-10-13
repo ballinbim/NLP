@@ -42,4 +42,4 @@ import matplotlib.pyplot as plt
 
 plt.gcf().tight_layout()
 
-# plt.show()
+plt.show()
