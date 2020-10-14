@@ -8,7 +8,7 @@ from textblob import TextBlob
 blob = TextBlob(Path('RomeoAndJuliet.txt').read_text())
 
 
-stops = stopwords.words("english")
+stops = stopwords.words('english')
 # print(stops)
 
 # blob = TextBlob('Today is a beautiful day.')
@@ -25,10 +25,10 @@ items = [i for i in items if i[0] not in stops]
 
 from operator import itemgetter
 
-sorted_items = sorted(items, key = itemgetter(1), reverse = True)
+sorted_items = sorted(items, key=itemgetter(1), reverse=True)
 # print(sorted_items)
 
-top20 = sorted_items[:20]
+top20 = sorted_items[1:21]
 print(top20)
 
 import pandas as pd
