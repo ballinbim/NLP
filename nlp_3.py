@@ -3,7 +3,6 @@ import nltk
 from nltk.corpus import stopwords
 from textblob import TextBlob
 from pathlib import Path
-from textblob import TextBlob
 
 blob = TextBlob(Path('RomeoAndJuliet.txt').read_text())
 
